@@ -1,0 +1,9 @@
+    state = fields.Selection(
+        [('nuevo', 'Nuevo'),
+         ('asignado', 'Asignado'),
+         ('en_proceso', 'En proceso'),
+         ('pendiente', 'Pendiente'),
+         ('resuelto', 'Resuelto'),
+         ('cancelado', 'Cancelado')],
+        string='State',
+        default='nuevo')
